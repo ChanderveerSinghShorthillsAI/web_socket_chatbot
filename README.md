@@ -1,11 +1,10 @@
-```markdown
 # WebSocket Chatbot Demo
 
 This project is a WebSocket-based chatbot application that streams responses from OpenAI's GPT model. It includes a backend built with FastAPI and a frontend for interacting with the chatbot in real-time.
 
 ---
 
-##  Features
+## Features
 
 - **WebSocket Communication**: Real-time communication between the client and server using WebSockets.
 - **Streaming Responses**: Token-by-token streaming of responses from OpenAI's GPT model.
@@ -14,7 +13,7 @@ This project is a WebSocket-based chatbot application that streams responses fro
 
 ---
 
-##  Project Structure
+## Project Structure
 
 ```
 web_socket/
@@ -33,7 +32,7 @@ web_socket/
 
 ---
 
-##  Prerequisites
+## Prerequisites
 
 - Python 3.9 or higher
 - Node.js (optional, if you plan to extend the frontend)
@@ -81,11 +80,11 @@ uvicorn app.main:app --reload
 ```
 
 The server will be available at:  
- `http://localhost:8000`
+`http://localhost:8000`
 
 ---
 
-##  Frontend Usage
+## Frontend Usage
 
 1. Open the `static/client.html` file in your browser.
 2. Type a query in the input box and click **Send**.
@@ -93,22 +92,22 @@ The server will be available at:
 
 ---
 
-##  Key Files
+## Key Files
 
-###  Backend
+### Backend
 
 - `app/config.py`: Manages environment variables using Pydantic.
 - `app/handler.py`: Handles OpenAI API streaming and WebSocket responses.
 - `app/routes.py`: Defines the WebSocket route for handling queries.
 - `app/s3.py`: Manages AWS S3 operations, including generating presigned URLs.
 
-###  Frontend
+### Frontend
 
 - `static/client.html`: Provides a simple interface for interacting with the chatbot.
 
 ---
 
-##  Deployment
+## Deployment
 
 ### Deploying Backend
 
@@ -121,21 +120,21 @@ The server will be available at:
 
 ---
 
-##  Security Notes
+## Security Notes
 
 - **Do not commit sensitive files**: Ensure `.env` and `venv/` are listed in `.gitignore`.
 - **Use HTTPS**: Always use secure WebSocket (`wss://`) in production.
 
 ---
 
-##  License
+## License
 
 This project is licensed under the MIT License.  
 See the [`LICENSE`](LICENSE) file for details.
 
 ---
 
-##  Acknowledgments
+## Acknowledgments
 
 - [FastAPI](https://fastapi.tiangolo.com/) — for the backend framework.
 - [OpenAI](https://openai.com/) — for the GPT model.
@@ -143,9 +142,7 @@ See the [`LICENSE`](LICENSE) file for details.
 
 ---
 
-##  Author
+## Author
 
 - **Chanderveer Singh Chauhan**
-```
 
----
